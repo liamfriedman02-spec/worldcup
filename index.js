@@ -28,14 +28,14 @@ async function handleUpdate(update) {
   await tg("sendMessage", {
     chat_id: msg.chat.id,
     text:
-      "\u26BD Spain vs Argentina \u2014 the World Cup Final is tonight.\n\n" +
-      "Pick your winner and back it on Sharker.\n" +
-      "18+ | Please bet responsibly. Terms: sharker.com",
+      "\u26BD España vs Argentina \u2014 la Final de la Copa del Mundo es esta noche.\n\n" +
+      "Elige a tu ganador y apuéstalo en Sharker.\n" +
+      "18+ | Juega con responsabilidad. Términos: sharker.com",
     reply_markup: {
       inline_keyboard: [
         [
-          { text: "\uD83C\uDDE6\uD83C\uDDF7 Pick Argentina", web_app: { url: APP_URL + "?pick=argentina" } },
-          { text: "\uD83C\uDDEA\uD83C\uDDF8 Pick Spain", web_app: { url: APP_URL + "?pick=spain" } },
+          { text: "\uD83C\uDDE6\uD83C\uDDF7 Elige a Argentina", web_app: { url: APP_URL + "?pick=argentina" } },
+          { text: "\uD83C\uDDEA\uD83C\uDDF8 Elige a España", web_app: { url: APP_URL + "?pick=spain" } },
         ],
       ],
     },
